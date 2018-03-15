@@ -1,0 +1,62 @@
+<!-- Breadcrumb -->
+    <section class="g-my-30">
+      <div class="container">
+        <ul class="u-list-inline">
+          <li class="list-inline-item g-mr-7">
+            <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Home</a>
+            <i class="fa fa-angle-right g-ml-7"></i>
+          </li>
+          <li class="list-inline-item g-mr-7">
+            <a class="u-link-v5 g-color-main g-color-primary--hover" href="#!">Pages</a>
+            <i class="fa fa-angle-right g-ml-7"></i>
+          </li>
+          <li class="list-inline-item g-color-primary">
+            <span>Profile Settings</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+<!-- End Breadcrumb -->
+
+<!-- Contact Form -->
+    <section class="container g-py-100">
+      <div class="row g-mb-20">
+        <div class="col-lg-6 g-mb-50">
+          <!-- Heading -->
+          <h2 class="h1 g-color-black g-font-weight-700 mb-4">Crear una nueva propuesta:</h2>
+          <p class="g-font-size-18 mb-0">Subtitulo... </p>
+          <!-- End Heading -->
+        </div>
+      </div>
+
+      <form class="form-horizontal" [formGroup]="Proposalsearch" (ngSubmit)="onSubmit(Proposalsearch)">
+
+        <div class="form group">
+					<div class="col-md-6 form-group g-mb-20">
+						<label for="functionality" class="g-color-gray-dark-v2 g-font-size-13">Titulo de la Propuesta: </label>
+						<input id="functionality" formControlName="functionality"
+							class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15"
+							type="text" placeholder="Patinando en El Retiro">
+					</div>
+				</div>
+
+				<div class="form group">
+					<div class="col-md-6 form-group g-mb-20">
+						<label for="proposaltype" class="g-color-gray-dark-v2 g-font-size-13">Estado de la Propuesta: </label>
+						<input id="proposaltype" formControlName="proposaltype"
+							class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--focus rounded-3 g-py-13 g-px-15"
+							type="text" placeholder="ESTUDIO, APROBADO, etc">
+					</div>
+				</div>
+
+				<div class="form group">
+					<div class="col-md-6 form-group g-mb-20">
+						<button
+						type="submit"
+						class="btn btn-primary btn-lg">Crear Propuesta</button>
+					</div>
+				</div>
+			</form>
+
+    </section>
+    <!-- End Contact Form -->

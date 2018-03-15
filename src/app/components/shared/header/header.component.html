@@ -1,0 +1,238 @@
+<!-- Header -->
+    <header id="js-header" class="u-header u-header--static">
+      <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+        <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
+          <div class="container">
+            <!-- Responsive Toggle Button -->
+            <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+              <span class="hamburger hamburger--slider">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+              </span>
+              </span>
+            </button>
+            <!-- End Responsive Toggle Button -->
+
+            <!-- Logo -->
+            <a href="./index.html" class="navbar-brand">
+              <img src="./assets/img/logo/logo-1.png" alt="Unify Logo">
+            </a>
+            <!-- End Logo -->
+
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="navBar">
+              <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
+
+                <!-- HOME -->
+                <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+                  <a [routerLink]="['/home']" id="nav-link-pages" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages">HOME</a>
+                </li>
+                <!-- End HOME -->
+
+                <!-- PERFIL -->
+                <li class="hs-has-sub-menu nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                  <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages">PERFIL</a>
+
+                  <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu-pages" aria-labelledby="nav-link-pages">
+                    <!-- Perfil list -->
+                    <div class="col-lg-6">
+                      <ul class="list-unstyled">
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['/profiles']" class="nav-link">Mi Perfil</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['/profiles/following']" class="nav-link">Following</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['/profiles/followers']" class="nav-link">Followers</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['/searches/profilesearch/searchprofileinterests']" class="nav-link">Buscar Usuario</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['/profiles/messages']" class="nav-link">Mensajes</a>
+                        </li>
+                        <li class="dropdown-item active">
+                          <a [routerLink]="['profiles/notifications']" class="nav-link">Notificaciones</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['profiles/reputation']" class="nav-link">Reputación</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['profiles/unlockusers']" class="nav-link">Desbloquear Usuarios</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['profiles/cancelation']" class="nav-link">Configurar Cuenta</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- End Perfil list -->
+
+                  </ul>
+                </li>
+                <!-- End PERFIL -->
+
+                <!-- GRUPOS -->
+                <li class="hs-has-sub-menu nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                  <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages">GRUPOS</a>
+
+                  <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu-pages" aria-labelledby="nav-link-pages">
+                    <!-- Grupos list -->
+                    <div class="col-lg-6">
+                      <ul class="list-unstyled">
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['groups/listmygroups']"  class="nav-link">Mis Grupos</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['groups/listgroups']" class="nav-link">Listar Grupos</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['groups/creategroup']" class="nav-link">Añadir Grupo</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- End Grupos list -->
+                  </ul>
+                </li>
+                <!-- End GRUPOS -->
+
+                <!-- ARTICULOS -->
+                <li class="hs-has-sub-menu nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                  <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages">ARTÍCULOS</a>
+
+                  <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu-pages" aria-labelledby="nav-link-pages">
+                    <!-- ArtÃ­culos list -->
+                    <div class="col-lg-6">
+                      <ul class="list-unstyled">
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['posts/listmyposts']" class="nav-link">Mis Artículos</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['posts/listposts']" class="nav-link">Listar Artículos</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['posts/createpost']" class="nav-link">Añadir Artículos</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- End ArtÃ­culos list -->
+
+                  </ul>
+                </li>
+                <!-- End ARTICULOS -->
+
+                <!-- PROPUESTAS -->
+                <li class="hs-has-sub-menu nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                  <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages">PROPUESTAS</a>
+
+                  <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu-pages" aria-labelledby="nav-link-pages">
+                    <!-- Propuestas list -->
+                    <div class="col-lg-6">
+                      <ul class="list-unstyled">
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['proposals/listmyproposals']" class="nav-link">Mis Propuestas</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['proposals/assignproposalslist']" class="nav-link">Asignar Votos</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['proposals/listproposals']" class="nav-link">Listar Propuestas</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['proposals/createproposal']" class="nav-link">Añadir Propuestas</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- End Propuestas list -->
+
+                  </ul>
+                </li>
+                <!-- End PROPUESTAS -->
+
+                <!-- DEBATES -->
+                <li class="hs-has-sub-menu nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                  <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages">DEBATES</a>
+
+                  <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu-pages" aria-labelledby="nav-link-pages">
+                    <!-- Debates list -->
+                    <div class="col-lg-6">
+                      <ul class="list-unstyled">
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['debates/listmydebates']" class="nav-link">Mis Debates</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['debates/listdebates']" class="nav-link">Listar Debates</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['searches/debatesearch/searchdebate']" class="nav-link">Buscar Debate</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['debates/createdebate']" class="nav-link">Crear Debates</a>
+                        </li>
+                        <li class="dropdown-item ">
+                          <a [routerLink]="['debates/listmultidebates']" class="nav-link">Leyes, Encuetas, Estudios</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- End Debates list -->
+
+                  </ul>
+                </li>
+                <!-- End DEBATES -->
+
+                <!-- PANEL DE CONTROL -->
+                <li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                  <a id="nav-link-demos" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-demos">PANEL DE CONTROL</a>
+
+                  <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu-demos" aria-labelledby="nav-link-demos">
+
+                    <!-- Panel de Control - Admin Template -->
+                    <li class="dropdown-item ">
+                      <a class="nav-link" [routerLink]="['/dashboards']" target="_blank">Dashboard <span class="u-label g-rounded-3 g-font-size-10 g-bg-lightred g-py-3 g-pos-rel g-top-minus-1 g-ml-5">New</span></a>
+                    </li>
+                    <!-- End Panel de Control - Admin Template -->
+
+                    <!-- Panel de Control - E-Commerce -->
+                    <li class="dropdown-item ">
+                      <a class="nav-link" href="./e-commerce/home-page-1.html" target="_blank">E-Commerce <span class="g-opacity-0_5">(44 Pages)</span></a>
+                    </li>
+                    <!-- End Panel de Control - E-Commerce -->
+
+                    <!-- Panel de Control - University -->
+                    <li class="dropdown-item ">
+                      <a class="nav-link" href="./multipage/education/home-page-1.html" target="_blank">University <span class="g-opacity-0_5">(13 Pages)</span></a>
+                    </li>
+                    <!-- End Panel de Control - University -->
+
+                    <!-- Panel de Control - Marketing -->
+                    <li class="dropdown-item ">
+                      <a class="nav-link" href="./multipage/marketing/home-page-1.html" target="_blank">Marketing <span class="g-opacity-0_5">(10 Pages)</span></a>
+                    </li>
+                    <!-- End Panel de Control - Marketing -->
+
+                    <!-- Panel de Control - Real Estate -->
+                    <li class="dropdown-item ">
+                      <a class="nav-link" href="./multipage/real-estate/home-page-1.html" target="_blank">Real Estate <span class="g-opacity-0_5">(13 Pages)</span></a>
+                    </li>
+                    <!-- End Panel de Control - Real Estate -->
+
+                    <!-- Panel de Control - Blogs & Magazines -->
+                    <li class="dropdown-item ">
+                      <a class="nav-link" href="./multipage/blog-magazine/classic/bm-classic-home-page-1.html" target="_blank">Blogs &amp; Magazines  <span class="g-opacity-0_5">(6 Pages)</span></a>
+                    </li>
+                    <!-- End Panel de Control - Blogs & Magazines -->
+                  </ul>
+                </li>
+                <!-- End PANEL DE CONTROL -->
+              </ul>
+            </div>
+            <!-- End Navigation -->
+
+            <div class="d-inline-block g-hidden-xs-down g-pos-rel g-valign-middle g-pl-30 g-pl-0--lg">
+              <a class="btn u-btn-outline-primary g-font-size-13 text-uppercase g-py-10 g-px-15" href="https://wrapbootstrap.com/theme/unify-responsive-website-template-WB0412697?ref=htmlstream" target="_blank">Purchase now</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
