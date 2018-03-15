@@ -10,7 +10,6 @@ import { SharedModule } from '../shared/shared.module';
 import { BODY_ROUTES } from './body.routes';
 
 // COMPONENTS
-import { AppComponent } from '../../app.component';
 import { BodyComponent } from './body.component';
 import { HomeComponent } from './home/home.component';
 import { ProfilesComponent } from './profiles/profiles.component';
@@ -18,7 +17,6 @@ import { GroupsComponent } from './groups/groups.component';
 import { PostsComponent } from './posts/posts.component';
 import { ProposalsComponent } from './proposals/proposals.component';
 import { DebatesComponent } from './debates/debates.component';
-import { DashboardsComponent } from './dashboards/dashboards.component';
 import { GeneralComponent } from './general/general.component';
 import { FollowersComponent } from './profiles/followers/followers.component';
 import { FollowingComponent } from './profiles/following/following.component';
@@ -51,14 +49,12 @@ import { SearchprofileinterestsComponent } from './searches/profilesearch/search
 @NgModule({
   declarations: [
     BodyComponent,
-    AppComponent,
     HomeComponent,
     ProfilesComponent,
     GroupsComponent,
     PostsComponent,
     ProposalsComponent,
     DebatesComponent,
-    DashboardsComponent,
     GeneralComponent,
     FollowersComponent,
     FollowingComponent,
@@ -87,14 +83,12 @@ import { SearchprofileinterestsComponent } from './searches/profilesearch/search
   ],
   exports: [
     BodyComponent,
-    AppComponent,
     HomeComponent,
     ProfilesComponent,
     GroupsComponent,
     PostsComponent,
     ProposalsComponent,
     DebatesComponent,
-    DashboardsComponent,
     GeneralComponent,
     FollowersComponent,
     FollowingComponent,
@@ -129,7 +123,6 @@ import { SearchprofileinterestsComponent } from './searches/profilesearch/search
     SharedModule,
     BODY_ROUTES
 //    DataTablesModule,
-    // APP_ROUTING
   ]
 })
 export class BodyModule { }

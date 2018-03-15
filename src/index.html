@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Frontend</title>
-  <base href="/">
+    <meta charset="utf-8">
+    <title>Frontend</title>
+    <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta http-equiv="Content-Type" content="text/html; " />
+    <meta http-equiv="Content-Type" content="text/html; " />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./favicon.ico">
@@ -44,10 +45,10 @@
 
 <body>
 
-  <app-root>Cargando...</app-root>
+    <app-root>Cargando...</app-root>
 
 
-  <!-- JS Global Compulsory -->
+    <!-- JS Global Compulsory -->
     <script src="./assets/vendor/jquery/jquery.min.js"></script>
     <script src="./assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
     <script src="./assets/vendor/popper.min.js"></script>
@@ -80,48 +81,42 @@
     <!-- JS Customization -->
     <script src="./assets/js/custom.js"></script>
 
+
+
     <!-- JS Plugins Init. -->
     <script>
-      $(document).on('ready', function () {
-          // initialization of carousel
-          $.HSCore.components.HSCarousel.init('.js-carousel');
-
-          // initialization of tabs
-          $.HSCore.components.HSTabs.init('[role="tablist"]');
-
-          // initialization of go to
-          $.HSCore.components.HSGoTo.init('.js-go-to');
-
-          // initialization of video on background
-          $.HSCore.helpers.HSBgVideo.init('.js-bg-video');
-
-          // initialization of popups
-          $.HSCore.components.HSPopup.init('.js-fancybox');
-        });
-
-        $(window).on('load', function () {
-          // initialization of header
-          $.HSCore.components.HSHeader.init($('#js-header'));
-          $.HSCore.helpers.HSHamburgers.init('.hamburger');
-
-          // initialization of HSMegaMenu component
-          $('.js-mega-menu').HSMegaMenu({
-            event: 'hover',
-            pageContainer: $('.container'),
-            breakpoint: 991
-          });
-
-          // initialization of cubeportfolio
-          $.HSCore.components.HSCubeportfolio.init('.cbp');
-        });
-
-        $(window).on('resize', function () {
-          setTimeout(function () {
+        $(document).on('ready', function() {
+            // initialization of carousel
+            $.HSCore.components.HSCarousel.init('.js-carousel');
+            // initialization of tabs
             $.HSCore.components.HSTabs.init('[role="tablist"]');
-          }, 200);
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+            // initialization of video on background
+            $.HSCore.helpers.HSBgVideo.init('.js-bg-video');
+            // initialization of popups
+            $.HSCore.components.HSPopup.init('.js-fancybox');
+        });
+        $(window).on('load', function() {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991
+            });
+            // initialization of cubeportfolio
+            $.HSCore.components.HSCubeportfolio.init('.cbp');
+        });
+        $(window).on('resize', function() {
+            setTimeout(function() {
+                $.HSCore.components.HSTabs.init('[role="tablist"]');
+            }, 200);
         });
     </script>
 
-  </body>
+</body>
 
-  </html>
+</html>

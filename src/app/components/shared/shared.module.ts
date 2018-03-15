@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
-import { NopagefoundComponent } from './nopagefound/nopagefound.component';
+import { Pagenotfound404Component } from './pagenotfound404/pagenotfound404.component';
 
 
 @NgModule({
@@ -18,13 +18,13 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
         HeaderComponent,
         FooterComponent,
         BreadcrumbsComponent,
-        NopagefoundComponent
+        Pagenotfound404Component
     ],
     exports: [
         HeaderComponent,
         FooterComponent,
         BreadcrumbsComponent,
-        NopagefoundComponent
+        Pagenotfound404Component
     ]
 })
 export class SharedModule { }

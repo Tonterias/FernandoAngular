@@ -1,9 +1,17 @@
 import { RouterModule, Routes } from '@angular/router';
 
-import { BodyComponent } from './components/body/body.component';
+import { AppComponent } from './app.component';
 
-const APP_ROUTES: Routes = [
-  { path: '**', pathMatch: 'full', redirectTo: 'home' }
+import { BodyComponent } from './components/body/body.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+
+import { Pagenotfound404Component } from './components/shared/pagenotfound404/pagenotfound404.component';
+
+const appRoutes: Routes = [
+  { path: 'home', component: BodyComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  // ng { path: '**', pathMatch: 'full', redirectTo: 'home' }
+  { path: '**', component: Pagenotfound404Component }
 ];
 
-export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES, { useHash: true });
+export const APP_ROUTES = RouterModule.forRoot( appRoutes );

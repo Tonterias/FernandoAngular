@@ -3,14 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 // COMPONENTS
 import { BodyComponent } from './body.component';
 
-import { AppComponent } from '../../app.component';
 import { HomeComponent } from './home/home.component';
 import { ProfilesComponent } from './profiles/profiles.component';
 import { GroupsComponent } from './groups/groups.component';
 import { PostsComponent } from './posts/posts.component';
 import { ProposalsComponent } from './proposals/proposals.component';
 import { DebatesComponent } from './debates/debates.component';
-import { DashboardsComponent } from './dashboards/dashboards.component';
 import { GeneralComponent } from './general/general.component';
 import { FollowersComponent } from './profiles/followers/followers.component';
 import { FollowingComponent } from './profiles/following/following.component';
@@ -42,7 +40,6 @@ const bodyRoutes: Routes = [
         path: '',
         component: BodyComponent,
         children: [
-            { path: 'dashboards', component: DashboardsComponent, data: { titulo: 'Dashboard' } },
             { path: 'debates', component: DebatesComponent, data: { titulo: 'Debates' } },
             { path: 'debates/listdebates', component: ListdebatesComponent, data: { titulo: 'Listado de debates' } },
             { path: 'debates/listmydebates', component: ListmydebatesComponent, data: { titulo: 'Mis debates' } },
