@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+
+import { SharedModule } from '../shared/shared.module';
 // import { DataTablesModule } from 'angular-datatables';
 
 // ROUTES
@@ -9,8 +11,8 @@ import { BODY_ROUTES } from './body.routes';
 // import { APP_ROUTING } from './app.routes';
 
 // COMPONENTS
-import { BodyComponent } from './body.component';
 import { AppComponent } from '../../app.component';
+import { BodyComponent } from './body.component';
 import { HomeComponent } from './home/home.component';
 import { ProfilesComponent } from './profiles/profiles.component';
 import { GroupsComponent } from './groups/groups.component';
@@ -125,6 +127,7 @@ import { SearchprofileinterestsComponent } from './searches/profilesearch/search
     FormsModule,
     HttpModule,
     ReactiveFormsModule,
+    SharedModule,
     BODY_ROUTES
 //    DataTablesModule,
     // APP_ROUTING

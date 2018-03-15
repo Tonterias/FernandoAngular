@@ -1,6 +1,8 @@
 import { RouterModule, Routes } from '@angular/router';
 
 // COMPONENTS
+import { BodyComponent } from './body.component';
+
 import { AppComponent } from '../../app.component';
 import { HomeComponent } from './home/home.component';
 import { ProfilesComponent } from './profiles/profiles.component';
@@ -34,9 +36,6 @@ import { ListmydebatesComponent } from './debates/listmydebates/listmydebates.co
 import { ListmultidebatesComponent } from './debates/listmultidebates/listmultidebates.component';
 import { SearchdebateComponent } from './searches/debatesearch/searchdebate/searchdebate.component';
 import { SearchprofileinterestsComponent } from './searches/profilesearch/searchprofileinterests/searchprofileinterests.component';
-
-import { BodyComponent } from './body.component';
-
 
 const bodyRoutes: Routes = [
     {
