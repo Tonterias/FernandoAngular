@@ -8,7 +8,6 @@ import { SharedModule } from '../shared/shared.module';
 
 // ROUTES
 import { BODY_ROUTES } from './body.routes';
-// import { APP_ROUTING } from './app.routes';
 
 // COMPONENTS
 import { AppComponent } from '../../app.component';
