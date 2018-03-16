@@ -14,6 +14,8 @@ import { BodyComponent } from './body.component';
 
 import { HomeComponent } from './home/home.component';
 import { GeneralComponent } from './general/general.component';
+    import { LoginComponent } from './general/login/login.component';
+    import { RegisterComponent } from './general/register/register.component';
     import { AboutComponent } from './general/about/about.component';
     import { ContactComponent } from './general/contact/contact.component';
     import { PricesComponent } from './general/prices/prices.component';
@@ -66,6 +68,8 @@ import { SearchprofileinterestsComponent } from './searches/profilesearch/search
     BodyComponent,
     HomeComponent,
     GeneralComponent,
+      LoginComponent,
+      RegisterComponent,
       AboutComponent,
       ContactComponent,
       PricesComponent,
@@ -110,11 +114,15 @@ import { SearchprofileinterestsComponent } from './searches/profilesearch/search
     SearchdebateComponent,
     SearchprofileinterestsComponent,
     WorkwithusComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   exports: [
     BodyComponent,
     HomeComponent,
     GeneralComponent,
+      LoginComponent,
+      RegisterComponent,
       AboutComponent,
       ContactComponent,
       PricesComponent,

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { RouterModule } from '@angular/router';
 
 import { HeaderComponent } from './header/header.component';
@@ -10,15 +9,15 @@ import { Pagenotfound404Component } from './pagenotfound404/pagenotfound404.comp
 
 
 @NgModule({
-    imports: [
-        RouterModule,
-        CommonModule
-    ],
     declarations: [
         HeaderComponent,
         FooterComponent,
         BreadcrumbsComponent,
         Pagenotfound404Component
+    ],
+    imports: [
+        RouterModule,
+        CommonModule
     ],
     exports: [
         HeaderComponent,

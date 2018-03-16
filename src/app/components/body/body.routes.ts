@@ -5,6 +5,8 @@ import { BodyComponent } from './body.component';
 
 import { HomeComponent } from './home/home.component';
 import { GeneralComponent } from './general/general.component';
+    import { LoginComponent } from './general/login/login.component';
+    import { RegisterComponent } from './general/register/register.component';
     import { AboutComponent } from './general/about/about.component';
     import { ContactComponent } from './general/contact/contact.component';
     import { PricesComponent } from './general/prices/prices.component';
@@ -57,6 +59,8 @@ const bodyRoutes: Routes = [
         children: [
             { path: 'home', component: HomeComponent, data: { titulo: 'Home' } },
             { path: 'general', component: GeneralComponent },
+                { path: 'general/login', component: LoginComponent },
+                { path: 'general/register', component: RegisterComponent },
                 { path: 'general/about', component: AboutComponent },
                 { path: 'general/contact', component: ContactComponent },
                 { path: 'general/prices', component: PricesComponent },
