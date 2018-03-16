@@ -22,6 +22,8 @@ import { GeneralComponent } from './general/general.component';
     import { PrivacyComponent } from './general/privacy/privacy.component';
     import { CookiesComponent } from './general/cookies/cookies.component';
     import { ComingsoonComponent } from './general/comingsoon/comingsoon.component';
+    import { WorkwithusComponent } from './general/workwithus/workwithus.component';
+    import { AdvertiseComponent } from './general/advertise/advertise.component';
 import { ProfilesComponent } from './profiles/profiles.component';
     import { FollowersComponent } from './profiles/followers/followers.component';
     import { FollowingComponent } from './profiles/following/following.component';
@@ -72,6 +74,8 @@ import { SearchprofileinterestsComponent } from './searches/profilesearch/search
       PrivacyComponent,
       CookiesComponent,
       ComingsoonComponent,
+      WorkwithusComponent,
+      AdvertiseComponent,
     ProfilesComponent,
       FollowersComponent,
       FollowingComponent,
@@ -105,6 +109,7 @@ import { SearchprofileinterestsComponent } from './searches/profilesearch/search
     PromesasComponent,
     SearchdebateComponent,
     SearchprofileinterestsComponent,
+    WorkwithusComponent,
   ],
   exports: [
     BodyComponent,
@@ -118,6 +123,8 @@ import { SearchprofileinterestsComponent } from './searches/profilesearch/search
       PrivacyComponent,
       CookiesComponent,
       ComingsoonComponent,
+      WorkwithusComponent,
+      AdvertiseComponent,
     ProfilesComponent,
       FollowersComponent,
       FollowingComponent,

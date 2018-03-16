@@ -13,6 +13,8 @@ import { GeneralComponent } from './general/general.component';
     import { PrivacyComponent } from './general/privacy/privacy.component';
     import { CookiesComponent } from './general/cookies/cookies.component';
     import { ComingsoonComponent } from './general/comingsoon/comingsoon.component';
+    import { WorkwithusComponent } from './general/workwithus/workwithus.component';
+    import { AdvertiseComponent } from './general/advertise/advertise.component';
 import { ProfilesComponent } from './profiles/profiles.component';
     import { FollowersComponent } from './profiles/followers/followers.component';
     import { FollowingComponent } from './profiles/following/following.component';
@@ -63,6 +65,8 @@ const bodyRoutes: Routes = [
                 { path: 'general/privacy', component: PrivacyComponent },
                 { path: 'general/cookies', component: CookiesComponent },
                 { path: 'general/comingsoon', component: ComingsoonComponent },
+                { path: 'general/workwithus', component: WorkwithusComponent },
+                { path: 'general/advertise', component: AdvertiseComponent },
             { path: 'debates', component: DebatesComponent, data: { titulo: 'Debates' } },
                 { path: 'debates/listdebates', component: ListdebatesComponent, data: { titulo: 'Listado de debates' } },
                 { path: 'debates/listmydebates', component: ListmydebatesComponent, data: { titulo: 'Mis debates' } },
