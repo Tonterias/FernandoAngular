@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { Pagenotfound404Component } from './pagenotfound404/pagenotfound404.component';
+
+// Temporal
+import { IncrementadorComponent } from './incrementador/incrementador.component';
 
 
 @NgModule({
@@ -13,17 +17,20 @@ import { Pagenotfound404Component } from './pagenotfound404/pagenotfound404.comp
         HeaderComponent,
         FooterComponent,
         BreadcrumbsComponent,
-        Pagenotfound404Component
+        Pagenotfound404Component,
+        IncrementadorComponent
     ],
     imports: [
         RouterModule,
-        CommonModule
+        CommonModule,
+        FormsModule
     ],
     exports: [
         HeaderComponent,
         FooterComponent,
         BreadcrumbsComponent,
-        Pagenotfound404Component
+        Pagenotfound404Component,
+        IncrementadorComponent
     ]
 })
 export class SharedModule { }
