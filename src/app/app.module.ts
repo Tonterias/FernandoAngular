@@ -6,7 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 // import { DataTablesModule } from 'angular-datatables';
 import { BodyModule } from './components/body/body.module';
-import { DashboardModule } from './components/dashboard/dashboard.module';
+// import { DashboardModule } from './components/dashboard/dashboard.module';
 // ROUTES
 import { APP_ROUTES } from './app.routes';
 // SERVICES
@@ -19,7 +19,6 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent
-    // DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -27,9 +26,7 @@ import { AppComponent } from './app.component';
     HttpModule,
     ReactiveFormsModule,
     BodyModule,
-    DashboardModule,
     APP_ROUTES
-    //    DataTablesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

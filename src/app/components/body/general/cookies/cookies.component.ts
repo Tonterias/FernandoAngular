@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dbheader',
-  templateUrl: './dbheader.component.html',
+  selector: 'app-cookies',
+  templateUrl: './cookies.component.html',
   styles: []
 })
-export class DbheaderComponent implements OnInit {
+export class CookiesComponent implements OnInit {
 
   constructor() { }
 

@@ -1,7 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
 
-import { SettingsService } from '../../../services/service.index';
+import { SettingsService } from '../../../../services/settings/settings.service';
 
 @Component({
   selector: 'app-accout-settings',
