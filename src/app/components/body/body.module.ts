@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { SharedModule } from '../shared/shared.module';
+import { ChartsModule } from 'ng2-charts';
 // import { DataTablesModule } from 'angular-datatables';
 
 // ROUTES
@@ -173,6 +174,7 @@ import { SearchprofileinterestsComponent } from './searches/profilesearch/search
     HttpModule,
     ReactiveFormsModule,
     SharedModule,
+    ChartsModule,
     BODY_ROUTES
 //    DataTablesModule,
   ]

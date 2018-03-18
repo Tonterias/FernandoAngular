@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -10,6 +11,7 @@ import { Pagenotfound404Component } from './pagenotfound404/pagenotfound404.comp
 
 // Temporal
 import { IncrementadorComponent } from './incrementador/incrementador.component';
+import { GraficoDonaComponent } from './grafico-dona/grafico-dona.component';
 
 
 @NgModule({
@@ -18,19 +20,22 @@ import { IncrementadorComponent } from './incrementador/incrementador.component'
         FooterComponent,
         BreadcrumbsComponent,
         Pagenotfound404Component,
-        IncrementadorComponent
+        IncrementadorComponent,
+        GraficoDonaComponent
     ],
     imports: [
         RouterModule,
         CommonModule,
-        FormsModule
+        FormsModule,
+        ChartsModule
     ],
     exports: [
         HeaderComponent,
         FooterComponent,
         BreadcrumbsComponent,
         Pagenotfound404Component,
-        IncrementadorComponent
+        IncrementadorComponent,
+        GraficoDonaComponent
     ]
 })
 export class SharedModule { }
