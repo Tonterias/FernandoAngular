@@ -4,11 +4,16 @@ import { NgModule } from '@angular/core';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-// import { DataTablesModule } from 'angular-datatables';
 import { BodyModule } from './components/body/body.module';
+// import { DataTablesModule } from 'angular-datatables';
+
+// SERVICES
+// import { SettingsService } from './services/settings/settings.service';
+// import { SettingsService } from './services/service.index';
+import { ServiceModule } from './services/service.module';
+
 // ROUTES
 import { APP_ROUTES } from './app.routes';
-// SERVICES
 
 // COMPONENTS
 import { AppComponent } from './app.component';
@@ -24,6 +29,7 @@ import { AppComponent } from './app.component';
     HttpModule,
     ReactiveFormsModule,
     BodyModule,
+    ServiceModule,
     APP_ROUTES
   ],
   providers: [],
