@@ -8,6 +8,7 @@ import { Observable, Subscription } from 'rxjs/Rx';
   templateUrl: './rxjs.component.html',
   styles: []
 })
+
 export class RxjsComponent implements OnInit, OnDestroy {
 
   subscription: Subscription;
@@ -35,11 +36,11 @@ export class RxjsComponent implements OnInit, OnDestroy {
 
       let contador = 0;
 
-      let intervalo = setInterval ( () => {
+      const intervalo = setInterval ( () => {
 
         contador += 1;
 
-        let salida = {
+        const salida = {
           valor: contador
         };
 

@@ -58,6 +58,7 @@ import { AccoutSettingsComponent } from './dashboards/accout-settings/accout-set
 import { Graficas1Component } from './dashboards/graficas1/graficas1.component';
 import { ProgressComponent } from './dashboards/progress/progress.component';
 import { PromesasComponent } from './dashboards/promesas/promesas.component';
+import { RxjsComponent } from './dashboards/rxjs/rxjs.component';
 import { SearchdebateComponent } from './searches/debatesearch/searchdebate/searchdebate.component';
 import { SearchprofileinterestsComponent } from './searches/profilesearch/searchprofileinterests/searchprofileinterests.component';
 
@@ -112,6 +113,7 @@ import { SearchprofileinterestsComponent } from './searches/profilesearch/search
     Graficas1Component,
     ProgressComponent,
     PromesasComponent,
+    RxjsComponent,
     SearchdebateComponent,
     SearchprofileinterestsComponent,
     WorkwithusComponent,
@@ -165,6 +167,7 @@ import { SearchprofileinterestsComponent } from './searches/profilesearch/search
     Graficas1Component,
     ProgressComponent,
     PromesasComponent,
+    RxjsComponent,
     SearchdebateComponent,
     SearchprofileinterestsComponent
   ],

@@ -48,8 +48,10 @@ import { AccoutSettingsComponent } from './dashboards/accout-settings/accout-set
 import { Graficas1Component } from './dashboards/graficas1/graficas1.component';
 import { ProgressComponent } from './dashboards/progress/progress.component';
 import { PromesasComponent } from './dashboards/promesas/promesas.component';
+import { RxjsComponent } from './dashboards/rxjs/rxjs.component';
 import { SearchdebateComponent } from './searches/debatesearch/searchdebate/searchdebate.component';
 import { SearchprofileinterestsComponent } from './searches/profilesearch/searchprofileinterests/searchprofileinterests.component';
+
 
 
 const bodyRoutes: Routes = [
@@ -59,23 +61,23 @@ const bodyRoutes: Routes = [
         children: [
             { path: 'home', component: HomeComponent, data: { titulo: 'Home' } },
             { path: 'general', component: GeneralComponent },
-                { path: 'general/login', component: LoginComponent },
-                { path: 'general/register', component: RegisterComponent },
-                { path: 'general/about', component: AboutComponent },
-                { path: 'general/contact', component: ContactComponent },
-                { path: 'general/prices', component: PricesComponent },
-                { path: 'general/faq', component: FaqComponent },
-                { path: 'general/terms', component: TermsComponent },
-                { path: 'general/privacy', component: PrivacyComponent },
-                { path: 'general/cookies', component: CookiesComponent },
-                { path: 'general/comingsoon', component: ComingsoonComponent },
-                { path: 'general/workwithus', component: WorkwithusComponent },
-                { path: 'general/advertise', component: AdvertiseComponent },
+                { path: 'general/login', component: LoginComponent, data: { titulo: 'Login' } },
+                { path: 'general/register', component: RegisterComponent, data: { titulo: 'Registro' } },
+                { path: 'general/about', component: AboutComponent, data: { titulo: 'Acerca de nosotros' } },
+                { path: 'general/contact', component: ContactComponent, data: { titulo: 'Contacto' } },
+                { path: 'general/prices', component: PricesComponent, data: { titulo: 'Subscripción' } },
+                { path: 'general/faq', component: FaqComponent, data: { titulo: 'FAQ' } },
+                { path: 'general/terms', component: TermsComponent, data: { titulo: 'Términos legales' } },
+                { path: 'general/privacy', component: PrivacyComponent, data: { titulo: 'Política de privacidad' } },
+                { path: 'general/cookies', component: CookiesComponent, data: { titulo: 'Política de cookies' } },
+                { path: 'general/comingsoon', component: ComingsoonComponent, data: { titulo: 'Próximamente' } },
+                { path: 'general/workwithus', component: WorkwithusComponent, data: { titulo: 'Trabaja con nosotros' } },
+                { path: 'general/advertise', component: AdvertiseComponent, data: { titulo: 'Publicidad' } },
             { path: 'debates', component: DebatesComponent, data: { titulo: 'Debates' } },
                 { path: 'debates/listdebates', component: ListdebatesComponent, data: { titulo: 'Listado de debates' } },
                 { path: 'debates/listmydebates', component: ListmydebatesComponent, data: { titulo: 'Mis debates' } },
                 { path: 'debates/createdebate', component: CreatedebateComponent, data: { titulo: 'Crear debate' } },
-                { path: 'debates/listmultidebates', component: ListmultidebatesComponent, data: { titulo: 'Encuentas' } },
+                { path: 'debates/listmultidebates', component: ListmultidebatesComponent, data: { titulo: 'Encuestas' } },
             { path: 'groups', component: GroupsComponent, data: { titulo: 'Grupos' } },
                 { path: 'groups/creategroup', component: CreategroupComponent, data: { titulo: 'Crear grupo' } },
                 { path: 'groups/listgroups', component: ListgroupsComponent, data: { titulo: 'Listado de grupos' } },
@@ -98,10 +100,11 @@ const bodyRoutes: Routes = [
                 { path: 'proposals/listproposals', component: ListproposalsComponent, data: { titulo: 'Listar propuesta' } },
                 { path: 'proposals/listmyproposals', component: ListmyproposalsComponent, data: { titulo: 'Mis propuestas' } },
                 { path: 'proposals/assignproposalslist', component: AssignproposalslistComponent, data: { titulo: 'Asignar propuesta' } },
-            { path: 'dashboard/account-settings', component: AccoutSettingsComponent },
-            { path: 'dashboard/graficas1', component: Graficas1Component },
-            { path: 'dashboard/progress', component: ProgressComponent },
-            { path: 'dashboard/promesas', component: PromesasComponent },
+            { path: 'dashboard/account-settings', component: AccoutSettingsComponent, data: { titulo: 'Ajustes de temas' } },
+            { path: 'dashboard/graficas1', component: Graficas1Component, data: { titulo: 'Gráficas' } },
+            { path: 'dashboard/progress', component: ProgressComponent, data: { titulo: 'Progreso' } },
+            { path: 'dashboard/promesas', component: PromesasComponent, data: { titulo: 'Promesas' } },
+            { path: 'dashboard/rxjs', component: RxjsComponent, data: { titulo: 'RXJS' } },
             { path: 'searches/debatesearch/searchdebate', component: SearchdebateComponent, data: { titulo: 'Buscar debate' } },
             // tslint:disable-next-line:max-line-length
             { path: 'searches/profilesearch/searchprofileinterests', component: SearchprofileinterestsComponent, data: { titulo: 'Buscar perfil' } },

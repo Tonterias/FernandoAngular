@@ -21,14 +21,15 @@ export class BreadcrumbsComponent implements OnInit {
         console.log( data );
 
         this.label = data.titulo;
-        this.title.setTitle( this.label);
+        this.title.setTitle( this.label );
 
+        // tslint:disable-next-line:prefer-const
         let metaTag: MetaDefinition = {
           name: 'description',
           content: this.label
         };
 
-        this.meta.updateTag(metaTag);
+        this.meta.updateTag( metaTag );
       });
   }
 
