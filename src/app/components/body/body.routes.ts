@@ -52,12 +52,15 @@ import { RxjsComponent } from './dashboards/rxjs/rxjs.component';
 import { SearchdebateComponent } from './searches/debatesearch/searchdebate/searchdebate.component';
 import { SearchprofileinterestsComponent } from './searches/profilesearch/searchprofileinterests/searchprofileinterests.component';
 
+import { LoginGuardGuard } from '../../services/service.index';
+
 
 
 const bodyRoutes: Routes = [
     {
         path: '',
         component: BodyComponent,
+        // canActivate: [ LoginGuardGuard ],
         children: [
             { path: 'home', component: HomeComponent, data: { titulo: 'Home' } },
             { path: 'general', component: GeneralComponent },
