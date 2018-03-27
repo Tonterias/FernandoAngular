@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+
 import { BodyModule } from './components/body/body.module';
 // import { DataTablesModule } from 'angular-datatables';
 
@@ -17,11 +18,13 @@ import { APP_ROUTES } from './app.routes';
 
 // COMPONENTS
 import { AppComponent } from './app.component';
+import { Pagenotfound404Component } from './components/shared/pagenotfound404/pagenotfound404.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Pagenotfound404Component
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,7 @@ import { ChartsModule } from 'ng2-charts';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
-import { Pagenotfound404Component } from './pagenotfound404/pagenotfound404.component';
+// import { Pagenotfound404Component } from './pagenotfound404/pagenotfound404.component';
 
 // Temporal
 import { IncrementadorComponent } from './incrementador/incrementador.component';
@@ -19,7 +19,7 @@ import { GraficoDonaComponent } from './grafico-dona/grafico-dona.component';
         HeaderComponent,
         FooterComponent,
         BreadcrumbsComponent,
-        Pagenotfound404Component,
+        // Pagenotfound404Component,
         IncrementadorComponent,
         GraficoDonaComponent
     ],
@@ -33,7 +33,7 @@ import { GraficoDonaComponent } from './grafico-dona/grafico-dona.component';
         HeaderComponent,
         FooterComponent,
         BreadcrumbsComponent,
-        Pagenotfound404Component,
+        // Pagenotfound404Component,
         IncrementadorComponent,
         GraficoDonaComponent
     ]

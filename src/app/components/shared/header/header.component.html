@@ -1,254 +1,125 @@
 <!-- Header -->
 <header id="js-header" class="u-header u-header--static">
-    <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
-        <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
-            <div class="container">
-                <!-- Responsive Toggle Button -->
-                <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
-              <span class="hamburger hamburger--slider">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-              </span>
-              </span>
-            </button>
-                <!-- End Responsive Toggle Button -->
-
+    <!-- Top Bar -->
+    <div class="u-header__section g-brd-bottom g-brd-gray-light-v4 g-py-18">
+        <div class="container">
+            <div class="row align-items-center">
                 <!-- Logo -->
-                <a href="./index.html" class="navbar-brand">
-                    <img src="./assets/img/logo/logo-1.png" alt="Unify Logo">
-                </a>
+                <div class="col-md-3 g-hidden-md-down">
+                    <a [routerLink]="['/home']" class="navbar-brand">
+                        <img src="./assets/img/logo.png" alt="Logo">
+                    </a>
+                </div>
                 <!-- End Logo -->
 
-                <!-- Navigation -->
-                <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="navBar">
-                    <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
+                <!-- Subscribe Form -->
+                <div class="col-6 col-md-5">
+                    <form class="input-group rounded">
+                        <input class="form-control w-100 g-brd-secondary-light-v2 g-brd-primary--focus g-color-secondary-dark-v1 g-placeholder-secondary-dark-v1 g-bg-white g-font-weight-400 g-font-size-13 rounded g-px-20 g-py-12" type="text" placeholder="Search the entire site">
+                        <span class="input-group-addon g-brd-none g-py-0 g-pr-0">
+                <button class="btn u-btn-white g-color-primary--hover g-bg-secondary g-font-weight-600 g-font-size-13 text-uppercase rounded g-py-12 g-px-20" type="submit">
+                  <span class="g-hidden-md-down">Search</span>
+                        <i class="g-hidden-lg-up fa fa-search"></i>
+                        </button>
+                        </span>
+                    </form>
+                </div>
+                <!-- End Subscribe Form -->
 
-                        <!-- HOME -->
-                        <li class="nav-item  g-mx-10--lg g-mx-15--xl">
-                            <a [routerLink]="['/home']" id="nav-link-pages" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages">HOME</a>
-                        </li>
-                        <!-- End HOME -->
+                <!-- Language 
+              <div class="col-4 col-lg-2 g-pos-rel g-px-15 ml-auto">
+                <a id="languages-dropdown-invoker" class="g-color-secondary-dark-v1 g-color-primary--hover g-text-underline--none--hover" href="#!"
+                   aria-controls="languages-dropdown"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                   data-dropdown-event="hover"
+                   data-dropdown-target="#languages-dropdown"
+                   data-dropdown-type="css-animation"
+                   data-dropdown-duration="300"
+                   data-dropdown-hide-on-scroll="false"
+                   data-dropdown-animation-in="fadeIn"
+                   data-dropdown-animation-out="fadeOut">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="11" width="27" viewBox="0 0 640 480">
+                    <defs>
+                      <clipPath id="a">
+                        <path fill-opacity=".67" d="M-85.333 0h682.67v512h-682.67z"/>
+                      </clipPath>
+                    </defs>
+                    <g clip-path="url(#a)" transform="translate(80) scale(.94)">
+                      <g stroke-width="1pt">
+                        <path fill="#006" d="M-256 0H768.02v512.01H-256z"/>
+                        <path d="M-256 0v57.244l909.535 454.768H768.02V454.77L-141.515 0H-256zM768.02 0v57.243L-141.515 512.01H-256v-57.243L653.535 0H768.02z" fill="#fff"/>
+                        <path d="M170.675 0v512.01h170.67V0h-170.67zM-256 170.67v170.67H768.02V170.67H-256z" fill="#fff"/>
+                        <path d="M-256 204.804v102.402H768.02V204.804H-256zM204.81 0v512.01h102.4V0h-102.4zM-256 512.01L85.34 341.34h76.324l-341.34 170.67H-256zM-256 0L85.34 170.67H9.016L-256 38.164V0zm606.356 170.67L691.696 0h76.324L426.68 170.67h-76.324zM768.02 512.01L426.68 341.34h76.324L768.02 473.848v38.162z" fill="#c00"/>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>English</span> <i class="g-hidden-sm-down fa fa-angle-down g-ml-7"></i>
+                </a>
 
-                        <!-- PERFIL -->
-                        <li class="hs-has-sub-menu nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
-                            <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages">PERFIL</a>
+                <ul id="languages-dropdown" class="list-unstyled g-width-160 g-brd-around g-brd-secondary-light-v2 g-bg-white rounded g-pos-abs g-py-5 g-mt-32"
+                    aria-labelledby="languages-dropdown-invoker">
+                  <li>
+                    <a class="d-block g-color-secondary-dark-v1 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">
+                      <svg class="mr-1 g-ml-minus-6" xmlns="http://www.w3.org/2000/svg" height="11" width="27" viewBox="0 0 640 480">
+                        <defs>
+                          <clipPath id="a">
+                            <path fill-opacity=".67" d="M-85.333 0h682.67v512h-682.67z"/>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#a)" transform="translate(80) scale(.94)">
+                          <g stroke-width="1pt">
+                            <path fill="#006" d="M-256 0H768.02v512.01H-256z"/>
+                            <path d="M-256 0v57.244l909.535 454.768H768.02V454.77L-141.515 0H-256zM768.02 0v57.243L-141.515 512.01H-256v-57.243L653.535 0H768.02z" fill="#fff"/>
+                            <path d="M170.675 0v512.01h170.67V0h-170.67zM-256 170.67v170.67H768.02V170.67H-256z" fill="#fff"/>
+                            <path d="M-256 204.804v102.402H768.02V204.804H-256zM204.81 0v512.01h102.4V0h-102.4zM-256 512.01L85.34 341.34h76.324l-341.34 170.67H-256zM-256 0L85.34 170.67H9.016L-256 38.164V0zm606.356 170.67L691.696 0h76.324L426.68 170.67h-76.324zM768.02 512.01L426.68 341.34h76.324L768.02 473.848v38.162z" fill="#c00"/>
+                          </g>
+                        </g>
+                      </svg>
+                      English
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-block g-color-secondary-dark-v1 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">
+                      <svg class="mr-1 g-ml-minus-6" xmlns="http://www.w3.org/2000/svg" height="11" width="27" viewBox="0 0 640 480">
+                        <g stroke-width="1pt" fill-rule="evenodd">
+                          <path fill="#fff" d="M0 0h640v480H0z"/>
+                          <path fill="#00267f" d="M0 0h213.33v480H0z"/>
+                          <path fill="#f31830" d="M426.67 0H640v480H426.67z"/>
+                        </g>
+                      </svg>
+                      Spanish
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-block g-color-secondary-dark-v1 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">
+                      <svg class="mr-1 g-ml-minus-6" xmlns="http://www.w3.org/2000/svg" height="11" width="27" viewBox="0 0 640 480">
+                        <g fill-rule="evenodd" stroke-width="1pt">
+                          <path fill="#fff" d="M0 0h640v480H0z"/>
+                          <path fill="#0039a6" d="M0 160.003h640V480H0z"/>
+                          <path fill="#d52b1e" d="M0 319.997h640V480H0z"/>
+                        </g>
+                      </svg>
+                      Russian
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-block g-color-secondary-dark-v1 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">
+                      <svg class="mr-1 g-ml-minus-6" xmlns="http://www.w3.org/2000/svg" height="11" width="27" viewBox="0 0 640 480">
+                        <path fill="#ffce00" d="M0 320h640v160.002H0z"/>
+                        <path d="M0 0h640v160H0z"/>
+                        <path fill="#d00" d="M0 160h640v160H0z"/>
+                      </svg>
+                      German
+                    </a>
+                  </li>
+                </ul>
+              </div>
+               End Language -->
 
-                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu-pages" aria-labelledby="nav-link-pages">
-                                <!-- Perfil list -->
-                                <div class="col-lg-6">
-                                    <ul class="list-unstyled">
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['/profiles']" class="nav-link">Mi Perfil</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['/profiles/following']" class="nav-link">Following</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['/profiles/followers']" class="nav-link">Followers</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['/searches/profilesearch/searchprofileinterests']" class="nav-link">Buscar Usuario</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['/profiles/messages']" class="nav-link">Mensajes</a>
-                                        </li>
-                                        <li class="dropdown-item active">
-                                            <a [routerLink]="['profiles/notifications']" class="nav-link">Notificaciones</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['profiles/reputation']" class="nav-link">Reputación</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['profiles/unlockusers']" class="nav-link">Desbloquear Usuarios</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['profiles/cancelation']" class="nav-link">Configurar Cuenta</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- End Perfil list -->
-
-                            </ul>
-                        </li>
-                        <!-- End PERFIL -->
-
-                        <!-- GRUPOS -->
-                        <li class="hs-has-sub-menu nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
-                            <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages">GRUPOS</a>
-
-                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu-pages" aria-labelledby="nav-link-pages">
-                                <!-- Grupos list -->
-                                <div class="col-lg-6">
-                                    <ul class="list-unstyled">
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['groups/listmygroups']" class="nav-link">Mis Grupos</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['groups/listgroups']" class="nav-link">Listar Grupos</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['groups/creategroup']" class="nav-link">Añadir Grupo</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- End Grupos list -->
-                            </ul>
-                        </li>
-                        <!-- End GRUPOS -->
-
-                        <!-- ARTICULOS -->
-                        <li class="hs-has-sub-menu nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
-                            <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages">ARTÍCULOS</a>
-
-                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu-pages" aria-labelledby="nav-link-pages">
-                                <!-- ArtÃ­culos list -->
-                                <div class="col-lg-6">
-                                    <ul class="list-unstyled">
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['posts/listmyposts']" class="nav-link">Mis Artículos</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['posts/listposts']" class="nav-link">Listar Artículos</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['posts/createpost']" class="nav-link">Añadir Artículos</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- End ArtÃ­culos list -->
-
-                            </ul>
-                        </li>
-                        <!-- End ARTICULOS -->
-
-                        <!-- PROPUESTAS -->
-                        <li class="hs-has-sub-menu nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
-                            <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages">PROPUESTAS</a>
-
-                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu-pages" aria-labelledby="nav-link-pages">
-                                <!-- Propuestas list -->
-                                <div class="col-lg-6">
-                                    <ul class="list-unstyled">
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['proposals/listmyproposals']" class="nav-link">Mis Propuestas</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['proposals/assignproposalslist']" class="nav-link">Asignar Votos</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['proposals/listproposals']" class="nav-link">Listar Propuestas</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['proposals/createproposal']" class="nav-link">Añadir Propuestas</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- End Propuestas list -->
-
-                            </ul>
-                        </li>
-                        <!-- End PROPUESTAS -->
-
-                        <!-- DEBATES -->
-                        <li class="hs-has-sub-menu nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
-                            <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages">DEBATES</a>
-
-                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu-pages" aria-labelledby="nav-link-pages">
-                                <!-- Debates list -->
-                                <div class="col-lg-6">
-                                    <ul class="list-unstyled">
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['debates/listmydebates']" class="nav-link">Mis Debates</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['debates/listdebates']" class="nav-link">Listar Debates</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['searches/debatesearch/searchdebate']" class="nav-link">Buscar Debate</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['debates/createdebate']" class="nav-link">Crear Debates</a>
-                                        </li>
-                                        <li class="dropdown-item ">
-                                            <a [routerLink]="['debates/listmultidebates']" class="nav-link">Leyes, Encuetas, Estudios</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- End Debates list -->
-
-                            </ul>
-                        </li>
-                        <!-- End DEBATES -->
-
-                        <!-- PANEL DE CONTROL -->
-                        <li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
-                            <a id="nav-link-demos" class="nav-link g-py-7 g-px-0" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-demos">PANEL DE CONTROL</a>
-
-                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu-demos" aria-labelledby="nav-link-demos">
-
-                                <!-- Panel de Control - Admin Template -->
-                                <li class="dropdown-item ">
-                                    <a class="nav-link" [routerLink]="['/dashboard']" target="_blank">Dashboard <span class="u-label g-rounded-3 g-font-size-10 g-bg-lightred g-py-3 g-pos-rel g-top-minus-1 g-ml-5">New</span></a>
-                                </li>
-                                <!-- End Panel de Control - Admin Template -->
-
-                                <!-- Panel de Control - E-Commerce -->
-                                <li class="dropdown-item ">
-                                    <a class="nav-link" href="./e-commerce/home-page-1.html" target="_blank">E-Commerce <span class="g-opacity-0_5">(44 Pages)</span></a>
-                                </li>
-                                <!-- End Panel de Control - E-Commerce -->
-
-                                <!-- Panel de Control - University -->
-                                <li class="dropdown-item ">
-                                    <a class="nav-link" href="./multipage/education/home-page-1.html" target="_blank">University <span class="g-opacity-0_5">(13 Pages)</span></a>
-                                </li>
-                                <!-- End Panel de Control - University -->
-
-                                <!-- Panel de Control - Marketing -->
-                                <li class="dropdown-item ">
-                                    <a class="nav-link" href="./multipage/marketing/home-page-1.html" target="_blank">Marketing <span class="g-opacity-0_5">(10 Pages)</span></a>
-                                </li>
-                                <!-- End Panel de Control - Marketing -->
-
-                                <!-- Panel de Control - Real Estate -->
-                                <li class="dropdown-item ">
-                                    <a class="nav-link" href="./multipage/real-estate/home-page-1.html" target="_blank">Real Estate <span class="g-opacity-0_5">(13 Pages)</span></a>
-                                </li>
-                                <!-- End Panel de Control - Real Estate -->
-
-                                <!-- Panel de Control - Blogs & Magazines -->
-                                <li class="dropdown-item ">
-                                    <a class="nav-link" href="./multipage/blog-magazine/classic/bm-classic-home-page-1.html" target="_blank">Blogs &amp; Magazines  <span class="g-opacity-0_5">(6 Pages)</span></a>
-                                </li>
-                                <!-- End Panel de Control - Blogs & Magazines -->
-                            </ul>
-                        </li>
-                        <!-- End PANEL DE CONTROL -->
-
-                        <!-- Countries -->
-                        <!-- <li class="list-inline-item g-pos-rel g-mx-4 g-mt-10">
-                                <i class="fa fa-globe g-font-size-14 g-mr-3"></i>
-                                <a href="#!" id="languages-dropdown-invoker-2" class="g-color-gray-dark-v2 g-color-primary--hover g-text-underline--none--hover" 
-                                    aria-controls="languages-dropdown-2" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" 
-                                    data-dropdown-target="#languages-dropdown-2" data-dropdown-type="css-animation" data-dropdown-duration="300" 
-                                    data-dropdown-hide-on-scroll="false" data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut">EN</a>
-                                <ul id="languages-dropdown-2" class="list-unstyled text-left u-shadow-v23 g-pos-abs g-left-0 g-bg-white g-width-160 g-py-20 g-pb-15 g-mt-13 g-z-index-2" aria-labelledby="languages-dropdown-invoker-2">
-                                    <li>
-                                        <a class="d-block g-color-main g-color-primary--hover g-text-underline--none--hover g-py-8 g-px-20" href="#!">English</a>
-                                    </li>
-                                    <li>
-                                        <a class="d-block g-color-main g-color-primary--hover g-text-underline--none--hover g-py-8 g-px-20" href="#!">Spanish</a>
-                                    </li>
-                                    <li>
-                                        <a class="d-block g-color-main g-color-primary--hover g-text-underline--none--hover g-py-8 g-px-20" href="#!">Russian</a>
-                                    </li>
-                                    <li>
-                                        <a class="d-block g-color-main g-color-primary--hover g-text-underline--none--hover g-py-8 g-px-20" href="#!">German</a>
-                                    </li>
-                                </ul>
-                            </li> -->
-                        <!-- End Countries -->
-                        <li class="list-inline-item g-mx-4 g-mt-10">|</li>
+                <!-- Account -->
+                <div class="col g-mt-10 g-mt-0--lg g-px-0">
+                    <ul class="list-inline text-uppercase g-font-weight-600 text-lg-right u-header--hidden-element g-line-height-1 g-font-size-12 g-mt-minus-10 g-mx-minus-4 g-mb-20">
                         <li class="list-inline-item g-mx-4 g-mt-10">
                             <a [routerLink]="['/general/login']" class="g-color-gray-dark-v2 g-color-primary--hover g-text-underline--none--hover">Entrar</a>
                         </li>
@@ -256,12 +127,42 @@
                         <li class="list-inline-item g-mx-4 g-mt-10">
                             <a [routerLink]="['/general/register']" class="g-color-gray-dark-v2 g-color-primary--hover g-text-underline--none--hover">Registrarse</a>
                         </li>
-                        <li class="list-inline-item g-mx-4 g-mt-10">|</li>
                     </ul>
                 </div>
-                <!-- End Navigation -->
+                <!-- End Account -->
+
+                <!-- Account -->
+                <div class="col-1">
+                    <a id="account-dropdown-invoker" class="media align-items-center float-right g-text-underline--none--hover" href="#!" aria-controls="account-dropdown" aria-haspopup="true" aria-expanded="false" data-dropdown-event="hover" data-dropdown-target="#account-dropdown"
+                        data-dropdown-type="css-animation" data-dropdown-duration="300" data-dropdown-hide-on-scroll="false" data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut">
+                        <div class="d-flex g-width-30 g-height-30 mr-2">
+                            <img class="img-fluid rounded-circle" src="assets/img-temp/100x100/img11.jpg" alt="Image Description">
+                        </div>
+                        <div class="media-body">
+                            <span class="d-block g-hidden-sm-down g-color-main g-font-weight-600 g-font-size-13">Martin</span>
+                        </div>
+                    </a>
+
+                    <ul id="account-dropdown" class="list-unstyled text-right g-width-160 g-brd-around g-brd-secondary-light-v2 g-bg-white rounded g-pos-abs g-right-0 g-py-5 g-mt-57" aria-labelledby="account-dropdown-invoker">
+                        <li>
+                            <a class="d-block g-color-secondary-dark-v1 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">My Account</a>
+                        </li>
+                        <li>
+                            <a class="d-block g-color-secondary-dark-v1 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">Notifications</a>
+                        </li>
+                        <li>
+                            <a class="d-block g-color-secondary-dark-v1 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">Settings</a>
+                        </li>
+                        <li>
+                            <a class="d-block g-color-secondary-dark-v1 g-color-primary--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">Signout</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Account -->
+
             </div>
-        </nav>
+        </div>
     </div>
+    <!-- End Top Bar -->
 </header>
 <!-- End Header -->
